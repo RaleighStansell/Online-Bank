@@ -444,6 +444,7 @@ def main():
         if (loginInput==1):
             currentUser=login()
             currentUserID=getID(currentUser)
+            restructureMySQL()
             loggedIn=True
         #Else if the user inputs number 2, the sign up function is called and loggedIn is set to true.
         elif (loginInput==2):
