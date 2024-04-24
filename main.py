@@ -405,10 +405,15 @@ def signUp():
     connection.commit()
     cursor.close()
     connection.close()
+    userName=input("Name: ")
+    userEmail=input("Email: ")
+    userUsername=input("Username: ")
+    userPin=int(input("PIN: "))
+    userBalance=float(input("Starting Balance: ")) 
     #Loops until the username entered isn't already used.
     #Lets the user input a username, email, name, pin, and bank account balance.
     while(testIfUsernameIsAlreadyUsed(userUsername)==True ):
-        root=Tk()
+        print("I'm sorry, that username already exists")
         userName=input("Name: ")
         userEmail=input("Email: ")
         userUsername=input("Username: ")
