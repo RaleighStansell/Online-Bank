@@ -455,6 +455,7 @@ def main():
         elif (loginInput==2):
             currentUser=signUp()
             currentUserID=getID(currentUser)
+            restructureMySQL()
             loggedIn=True
         #Else, recalls the user input to choose one of the 2 options
         else:
